@@ -15,7 +15,6 @@ public class TransferFundsEntityToDtoConverter {
         BeanUtils.copyProperties(transferFund, transferFundsDto);
         transferFundsDto.setTransactionId(transferFund.getTransactionId() + transferFund.getId());
         return transferFundsDto;
-
     }
 
     public List<TransferFundsDto> entityToDto(List<TransferFund> transferFunds) {
